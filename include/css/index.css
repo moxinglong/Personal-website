@@ -1,0 +1,383 @@
+header nav.navbar{
+    width: 100%;
+    height:70px;
+    background: #000;
+    color: #fff;
+}
+.container-fluid{
+    width: 98%;
+    height: 50px;
+    margin: 10px auto;
+}
+.navbar-content nav ul{
+    list-style: none;
+    height: 30px;
+    margin-top:10px;
+    line-height: 30px;
+    float: right;
+}
+.navbar-content nav ul li{
+    width:100px;
+    text-align: center;
+    display: inline-block;
+}
+.navbar-content nav ul li.active a{
+    color: #0fb5b3;
+}
+.navbar-content nav ul li:hover a{
+    color: #0fb5b3;
+}
+.navbar-content nav ul li a{
+    color:#b9b9b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.content{
+    width:100%;
+    margin-top:70px;
+    background:url("../../include/images/image_bg.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.content div{
+    width: 50%;
+    margin: 0 auto;
+    padding:50px 0px;
+}
+.content div h1:nth-child(1){
+    color: #b9b9b9;
+    font-size: 20px;
+    margin-top:30px;
+    padding-left:5%;
+}
+.content div h1:nth-child(2){
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    margin-top:50px;
+}
+.content div p.zhiwei{
+    width:35%;
+    padding:10px;
+    margin:20px auto;
+    color:#ddd;
+    font-weight: bold;
+    border-top: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+}
+.content div button{
+    padding:15px 20px;
+    background: #0fb5b3;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+}
+.content div p.button{
+    text-align: center;
+    margin-top:80px;
+}
+
+
+/*返回顶层*/
+#backToTop{
+    width:60px;
+    height: 60px;
+    color:#fff;
+    border-radius: 50%;
+    background: #0fb5b3;
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    display: inline-block;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    cursor: pointer;
+}
+#backToTop span{
+    width:100%;
+    text-align: center;
+    line-height: 60px;
+    font-size:20px;
+}
+
+
+/*主题内容*/
+#container{
+    width:100%;
+    margin:0 auto;
+}
+#container>.sections>.section{
+    width:100%;
+    margin:50px auto;
+}
+
+
+/*个人介绍模块*/
+
+#container>.sections>.header{
+    width:80%;
+    padding-bottom:10px;
+}
+#container>.sections>.section .image{
+    width:35%;
+    height:420px;
+    text-align: right;
+    line-height: 440px;
+    display: inline-block;
+}
+#container>.sections>.section .image img{
+    width:300px;
+    height:390px;
+    border:1px solid #ddd;
+    padding:10px;
+    box-shadow: 0px 0px 10px #999;
+    border-radius: 5px;
+}
+#container>.sections>.section .section_person{
+    width: 64%;
+	padding-top:10px;
+    padding-left: 30px;
+    float: right;
+}
+#container>.sections>.section .section_person>div table{
+    width:99%;
+    border-bottom: 1px solid #a8a8a8;
+    margin-bottom:20px;
+    padding-bottom:10px;
+}
+#container>.sections>.section .section_person>div table tr{
+    display:block;
+    padding:5px;
+}
+#container>.sections>.section .section_person>div table tr td{
+    padding : 5px;
+    width:150px;
+}
+#container>.sections>.section .section_person>div table tr td.table_name{
+    font-weight: bold;
+}
+
+/*技能掌握*/
+.skill{
+    width:100%;
+    height:430px;
+    margin-top:70px;
+    background:url("../../include/images/image_bg01.jpg");
+    background-position: 50% 30%;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.skill .skill_bg{
+    width: 100%;
+    height:100%;
+    background:#333;
+    opacity: 0.6;
+    position: absolute;
+}
+.skill .skill_content{
+    width: 100%;
+    height:110%;
+    position: absolute;
+    color:#fff;
+	text-align:center;
+}
+.skill .skill_content h1{
+    display:inline-block;
+    padding:10px 10px;
+    border-bottom:3px solid #0fb5b3;
+    color:#fff;
+}
+.skill .skill_content p{
+width:60%;
+text-align:left;
+margin:10px auto;
+}
+
+/*项目经验*/
+.experience{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.experience h1{
+    font-weight: bold;
+}
+.experience p{
+    width:50%;
+    margin: 0 auto;
+    padding:20px 0px 10px;
+    /*border-bottom:1px solid #a8a8a8;*/
+}
+.experience nav{
+   width:100%;
+}
+.experience nav ul{
+    width:50%;
+    text-align: center;
+    margin:40px auto 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.26);
+}
+.experience nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding:15px;
+    margin:0px 10px;
+    text-align: center;
+    color: #999;
+    font-size:18px;
+}
+.experience nav ul li span{
+    font-weight: bold;
+}
+.experience nav ul li.active{
+    border-bottom:5px solid #0fb5b3;
+}
+
+
+
+/*项目经验点击切换*/
+.experience .experience_divs .flex-wrap:nth-child(1){
+    display: block;
+}
+.experience .experience_divs .flex-wrap:nth-child(2){
+    display: none;
+}
+.experience .experience_divs .flex-wrap div{
+    width:90%;
+   margin:0 auto;
+}
+.experience .experience_divs .flex-wrap div div.center{
+    width:100%;
+    margin:0 auto;
+}
+.experience .experience_divs .flex-wrap div p{
+    width:100%;
+}
+.experience .experience_divs .flex-wrap div p.half{
+    width:50%;
+    float:left;
+}
+
+
+
+/*联系*/
+.contact{
+    width:100%;
+}
+.contact .contact_top{
+    width:100%;
+    height:250px;
+    background:url("../../include/images/image_bg01.jpg");
+    background-position: 50% 30%;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.contact .skill_bg{
+     width: 100%;
+     height:250px;
+     background:#333;
+     opacity: 0.6;
+     position: absolute;
+ }
+.contact .contact_top .divs{
+    position: absolute;
+    width:80%;
+    left:10%;
+}
+.contact .contact_top .flex-warp{
+    width:33.33%;
+    height:150px;
+    float: left;
+    color:#fff;
+    margin-top:50px;
+    text-align: center;
+}
+.contact .contact_top .flex-warp:nth-child(2){
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+.contact .contact_top .flex-warp .img{
+    display: inline-block;
+    width:40%;
+    height:150px;
+    float: left;
+    line-height: 150px;
+    font-size: 50px;
+    text-align: center;
+    color:#0fb5b3;
+}
+.contact .contact_top .flex-warp .text{
+    width:60%;
+    height:150px;
+    padding:40px 0px;
+    float: right;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.contact_bottom{
+    background:#333;
+    padding:20px 0px;
+}
+.contact_bottom p{
+    color:#ffffff;
+    font-size: 18px;
+}
+
+
+
+/*留言*/
+.Content{
+    width:100%;
+}
+.Content p{
+    width:100%;
+    font-size:14px;
+    color:#999999;
+    display: inline-block;
+    margin:25px auto 40px;
+}
+
+.Content .form{
+    width:60%;
+    margin:40px auto 0px;
+}
+.Content .form .input-group-left{
+    display: inline-block;
+    width:45%;
+    text-align: right;
+    margin-bottom:20px;
+}
+.Content .form .input-group-right{
+    width:45%;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    margin-bottom:20px;
+}
+.Content .form .input-group-left input,.Content .form .input-group-right input{
+    width:100%;
+    font-size:16px;
+    padding:10px 5px;
+    border:1px solid #ccc;
+}
+.Content .form textarea{
+    margin-top:20px;
+    font-size:18px;
+}
+.Content .form .button{
+    width:20%;
+    margin-left:40%;
+    margin-top:30px;
+    padding:15px 0px;
+    background: #0fb5b3;
+    border-radius: 5px;
+    border:none;
+    color:#fff;
+}
